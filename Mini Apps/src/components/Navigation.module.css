@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  background: rgb(192, 204, 53);
+  height: 110px;
+  font-size: x-large;
+}
+.nav div {
+  display: flex;
+}
+.nav div span {
+  cursor: pointer;
+  margin: 30px 20px;
+  border-color: black;
+  border-bottom-style: groove;
+  height: 35px;
+}
+.nav div span:hover {
+  background: rgb(219, 225, 139);
+}

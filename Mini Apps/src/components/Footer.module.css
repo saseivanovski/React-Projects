@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background: rgb(192, 204, 53);
+  height: 80px;
+  font-size: larger;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer span {
+  margin: auto;
+}
