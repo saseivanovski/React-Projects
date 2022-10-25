@@ -65,7 +65,7 @@ function TicTacToe() {
 
   return (
     <>
-      <ScoreBoard x={x}>
+      <ScoreBoard>
         <div className="scores">
           <span className="pX">X - {xScore}</span>
           <Reset className="reset" onClick={resetGame} />

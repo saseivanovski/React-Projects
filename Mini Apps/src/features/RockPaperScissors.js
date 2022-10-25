@@ -1,6 +1,6 @@
 import "./RockPaperScissors.css";
 import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Reset from "../components/Reset";
 import Button from "../components/Button";
 import ScoreBoard from "../components/ScoreBoard";
@@ -23,17 +23,14 @@ const RockPaperScissors = () => {
   const rock = () => {
     setPlayerAction(actions[0]);
     setComputerAction(getRandomItem(actions));
-    scoring();
   };
   const paper = () => {
     setPlayerAction(actions[1]);
     setComputerAction(getRandomItem(actions));
-    scoring();
   };
   const scissors = () => {
     setPlayerAction(actions[2]);
     setComputerAction(getRandomItem(actions));
-    scoring();
   };
 
   const scoring = () => {
@@ -51,6 +48,10 @@ const RockPaperScissors = () => {
       setComputerScore(computerScore + 1);
     }
   };
+
+  useEffect(() => {
+    if (playerAction && computerAction) scoring();
+  }, [playerAction, computerAction]);
 
   const restart = () => {
     setPlayerAction("");
