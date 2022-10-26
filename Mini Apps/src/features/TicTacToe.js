@@ -61,6 +61,7 @@ function TicTacToe() {
   const resetGame = () => {
     setGameOver(false);
     setValues(Array(9).fill(null));
+    setX(true);
   };
 
   return (
