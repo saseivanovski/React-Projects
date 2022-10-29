@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import FirstPage from "./FirstPage";
+import SecondPage from "./SecondPage";
 
 import "./index.css";
-import SecondPage from "./SecondPage";
 
 const router = createBrowserRouter([
   {

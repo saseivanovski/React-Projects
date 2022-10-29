@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Card from "./components/Card";
 
 function FirstPage() {
   const [posts, setPosts] = useState([]);
@@ -25,7 +26,7 @@ function FirstPage() {
   return (
     <>
       {posts.map((e) => (
-        <div key={e.id}>{e.title}</div>
+        <Card key={e.id} title={e.title} img={e.image} />
       ))}
     </>
   );
