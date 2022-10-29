@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+}
+.logo {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  margin: 20px 0px 0px 50px;
+}
+.navigation h2 {
+  display: flex;
+  align-self: center;
+  margin-left: 5rem;
+}
+.buttons {
+  display: flex;
+  align-self: center;
+  margin-right: 5rem;
+}
+.navigation img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 400px;
+}
+.link {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(0, 71, 18);
+}
