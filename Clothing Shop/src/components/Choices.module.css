@@ -1,0 +1,49 @@
+.choices {
+  position: relative;
+}
+.choices img {
+  width: 50%;
+}
+.choices div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+}
+.link_m {
+  z-index: 1;
+  align-self: center;
+  position: absolute;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  margin-right: 50%;
+}
+.link_w {
+  z-index: 1;
+  align-self: center;
+  position: absolute;
+  text-decoration: none;
+  font-size: xx-large;
+  color: black;
+  margin-left: 50%;
+}
+.link_a {
+  z-index: 1;
+  align-self: center;
+  position: absolute;
+  text-decoration: none;
+  font-size: xx-large;
+  color: black;
+  margin-right: 50%;
+}
+.link_e {
+  z-index: 1;
+  align-self: center;
+  position: absolute;
+  text-decoration: none;
+  font-size: xx-large;
+  color: white;
+  margin-left: 50%;
+}

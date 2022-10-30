@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "./components/Card";
+import classes from "./AllProducts.module.css";
 
-function FirstPage() {
+function SecondPage() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -24,12 +25,15 @@ function FirstPage() {
   }, []);
 
   return (
-    <>
-      {posts.map((e) => (
-        <Card key={e.id} title={e.title} img={e.image} />
-      ))}
-    </>
+    <div className={classes.products}>
+      {posts.map((e) => {
+        if (e.category === "men's clothing") {
+          return <Card key={e.id} title={e.title} img={e.image} />;
+        }
+        return "";
+      })}
+    </div>
   );
 }
 
-export default FirstPage;
+export default SecondPage;

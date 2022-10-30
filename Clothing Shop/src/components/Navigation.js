@@ -17,7 +17,9 @@ function Navigation(props) {
         <Link className={classes.link} to={"/"}>
           Home
         </Link>
-        <Button className={style.button}>Categories</Button>
+        <Link className={classes.link} to={"firstPage"}>
+          Products
+        </Link>
         <Button className={style.button}>
           <FaShoppingCart size={20} />
         </Button>
