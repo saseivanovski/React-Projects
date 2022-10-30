@@ -3,7 +3,7 @@ import axios from "axios";
 import Card from "./components/Card";
 import classes from "./AllProducts.module.css";
 
-function FirstPage() {
+function FirstPage(props) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,15 @@ function FirstPage() {
   return (
     <div className={classes.products}>
       {posts.map((e) => (
-        <Card key={e.id} title={e.title} img={e.image} />
+        <Card
+          key={e.id}
+          title={e.title}
+          img={e.image}
+          price={e.price}
+          description={e.description}
+          category={e.category}
+          rating={e.rating}
+        />
       ))}
     </div>
   );

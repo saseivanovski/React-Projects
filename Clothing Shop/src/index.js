@@ -8,6 +8,7 @@ import Men from "./Men";
 import Women from "./Women";
 import Accessories from "./Accessories";
 import Electronics from "./Electronics";
+import Details from "./Details";
 
 import "./index.css";
 import Choices from "./components/Choices";
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         element: <Electronics />,
       },
     ],
+  },
+  {
+    path: "/detailsPage/:id",
+    element: <Details />,
   },
 ]);
 

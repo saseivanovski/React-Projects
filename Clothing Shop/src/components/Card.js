@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import classes from "./Card.module.css";
 import styles from "./Button.module.css";
+import { Link } from "react-router-dom";
 
 function Card(props) {
   return (
@@ -9,7 +10,14 @@ function Card(props) {
       <p>{props.title}</p>
       <img src={props.img} alt="images"></img>
       <div className={classes.buttonsDiv}>
-        <Button className={styles.button}>Details</Button>
+        <Link
+          className={classes.link}
+          to={`/detailsPage/${props.description}${JSON.stringify(
+            props.rating
+          )}`}
+        >
+          Details
+        </Link>
         <Button className={styles.button}>Add to Basket</Button>
       </div>
     </div>

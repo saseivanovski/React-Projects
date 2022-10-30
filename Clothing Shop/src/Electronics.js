@@ -28,7 +28,17 @@ function SecondPage() {
     <div className={classes.products}>
       {posts.map((e) => {
         if (e.category === "electronics") {
-          return <Card key={e.id} title={e.title} img={e.image} />;
+          return (
+            <Card
+              key={e.id}
+              title={e.title}
+              img={e.image}
+              price={e.price}
+              description={e.description}
+              category={e.category}
+              rating={e.rating}
+            />
+          );
         }
         return "";
       })}

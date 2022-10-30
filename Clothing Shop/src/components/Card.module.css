@@ -20,3 +20,10 @@
 .buttonsDiv {
   margin-top: 15px;
 }
+.link {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(0, 71, 18);
+  margin-right: 10px;
+}
