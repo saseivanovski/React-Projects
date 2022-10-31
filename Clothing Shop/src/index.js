@@ -42,7 +42,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/detailsPage/:id",
+    path: "/detailsPage/:title",
     element: <Details />,
   },
 ]);

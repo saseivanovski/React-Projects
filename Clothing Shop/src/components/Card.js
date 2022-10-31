@@ -10,7 +10,7 @@ function Card(props) {
       <p>{props.title}</p>
       <img src={props.img} alt="images"></img>
       <div className={classes.buttonsDiv}>
-        <Link className={classes.link} to={`/detailsPage/${props.id}`}>
+        <Link className={classes.link} to={`/detailsPage/${props.title}`}>
           Details
         </Link>
         <Button className={styles.button}>Add to Basket</Button>

@@ -3,7 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 
 function Details(props) {
-  const { id } = useParams();
+  const { title } = useParams();
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -26,13 +26,17 @@ function Details(props) {
 
   return (
     <>
-      <p>{id}</p>
       <div>
         {posts
-          .filter((data) => data.id === id)
+          .filter((data) => data.title === title)
           .map((data, id) => (
             <div key={id}>
-              <h1>{data.title}</h1>
+              <h2>Title: {data.title}</h2>
+              <p>Price: {data.price}</p>
+              <p>Description: {data.description}</p>
+              <p>Category: {data.category}</p>
+              <p>Rating: {data.rating.rate}</p>
+              <p>Count: {data.rating.count}</p>
             </div>
           ))}
       </div>
