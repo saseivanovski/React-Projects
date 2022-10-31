@@ -27,15 +27,7 @@ function FirstPage(props) {
   return (
     <div className={classes.products}>
       {posts.map((e) => (
-        <Card
-          key={e.id}
-          title={e.title}
-          img={e.image}
-          price={e.price}
-          description={e.description}
-          category={e.category}
-          rating={e.rating}
-        />
+        <Card key={e.id} title={e.title} img={e.image} id={e.id} />
       ))}
     </div>
   );

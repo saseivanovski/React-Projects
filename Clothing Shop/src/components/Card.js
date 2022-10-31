@@ -10,12 +10,7 @@ function Card(props) {
       <p>{props.title}</p>
       <img src={props.img} alt="images"></img>
       <div className={classes.buttonsDiv}>
-        <Link
-          className={classes.link}
-          to={`/detailsPage/${props.description}${JSON.stringify(
-            props.rating
-          )}`}
-        >
+        <Link className={classes.link} to={`/detailsPage/${props.id}`}>
           Details
         </Link>
         <Button className={styles.button}>Add to Basket</Button>
