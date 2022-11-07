@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-function Details(props) {
-  const { title } = useParams();
+function Details() {
+  const { id } = useParams();
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("https://fakestoreapi.com/products");
+        const response = await axios.get(
+          `https://fakestoreapi.com/products/${id}`
+        );
+        console.log({ response });
         setPosts(response.data);
       } catch (err) {
         if (err.response) {
@@ -22,23 +25,23 @@ function Details(props) {
       }
     };
     fetchPosts();
-  }, []);
+  }, [id]);
+
+  if (posts.length === 0) {
+    return <div>Loading ...</div>;
+  }
 
   return (
     <>
       <div>
-        {posts
-          .filter((data) => data.title === title)
-          .map((data, id) => (
-            <div key={id}>
-              <h2>Title: {data.title}</h2>
-              <p>Price: {data.price}</p>
-              <p>Description: {data.description}</p>
-              <p>Category: {data.category}</p>
-              <p>Rating: {data.rating.rate}</p>
-              <p>Count: {data.rating.count}</p>
-            </div>
-          ))}
+        <div key={id}>
+          <h2>Title: {posts.title}</h2>
+          <p>Price: {posts.price}</p>
+          <p>Description: {posts.description}</p>
+          <p>Category: {posts.category}</p>
+          <p>Rating: {posts.rating.rate}</p>
+          <p>Count: {posts.rating.count}</p>
+        </div>
       </div>
     </>
   );

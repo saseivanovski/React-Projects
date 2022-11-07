@@ -9,7 +9,9 @@ function SecondPage() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("https://fakestoreapi.com/products");
+        const response = await axios.get(
+          "https://fakestoreapi.com/products/category/women's clothing"
+        );
         setPosts(response.data);
       } catch (err) {
         if (err.response) {
@@ -27,10 +29,7 @@ function SecondPage() {
   return (
     <div className={classes.products}>
       {posts.map((e) => {
-        if (e.category === "women's clothing") {
-          return <Card key={e.id} title={e.title} img={e.image} id={e.id} />;
-        }
-        return "";
+        return <Card key={e.id} title={e.title} img={e.image} id={e.id} />;
       })}
     </div>
   );

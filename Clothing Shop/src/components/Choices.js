@@ -11,11 +11,11 @@ function Choices() {
     <div className={classes.choices}>
       <div>
         <img src={men} alt="" />
-        <Link className={classes.link_m} to={"secondPage"}>
+        <Link className={classes.link_m} to={"menProducts"}>
           MEN
         </Link>
         <img src={women} alt="" />
-        <Link className={classes.link_w} to={"thirdPage"}>
+        <Link className={classes.link_w} to={"womenProducts"}>
           WOMEN
         </Link>
       </div>

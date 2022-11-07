@@ -19,6 +19,7 @@
   font-size: xx-large;
   color: white;
   margin-right: 50%;
+  box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.8);
 }
 .link_w {
   z-index: 1;
@@ -28,6 +29,7 @@
   font-size: xx-large;
   color: black;
   margin-left: 50%;
+  box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.8);
 }
 .link_a {
   z-index: 1;
@@ -37,6 +39,7 @@
   font-size: xx-large;
   color: black;
   margin-right: 50%;
+  box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.8);
 }
 .link_e {
   z-index: 1;
@@ -46,4 +49,5 @@
   font-size: xx-large;
   color: white;
   margin-left: 50%;
+  box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.8);
 }

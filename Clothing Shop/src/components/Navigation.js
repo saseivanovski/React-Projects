@@ -17,7 +17,7 @@ function Navigation(props) {
         <Link className={classes.link} to={"/"}>
           Home
         </Link>
-        <Link className={classes.link} to={"firstPage"}>
+        <Link className={classes.link} to={"allProducts"}>
           Products
         </Link>
         <Button className={style.button}>
