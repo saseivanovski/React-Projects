@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "./components/Card";
-import classes from "./AllProducts.module.css";
+import Card from "../components/Card";
+import classes from "../AllProducts.module.css";
 
 function SecondPage() {
   const [posts, setPosts] = useState([]);

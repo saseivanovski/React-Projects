@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "./components/Card";
-import classes from "./AllProducts.module.css";
+import Card from "../components/Card";
+import classes from "../AllProducts.module.css";
 
 function SecondPage() {
   const [posts, setPosts] = useState([]);
@@ -10,7 +10,7 @@ function SecondPage() {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "https://fakestoreapi.com/products/category/women's clothing"
+          "https://fakestoreapi.com/products/category/men's clothing"
         );
         setPosts(response.data);
       } catch (err) {

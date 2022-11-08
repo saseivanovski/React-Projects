@@ -4,11 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import AllProducts from "./AllProducts";
-import Men from "./Men";
-import Women from "./Women";
-import Accessories from "./Accessories";
-import Electronics from "./Electronics";
-import Details from "./Details";
+import Men from "./pages/Men";
+import Women from "./pages/Women";
+import Accessories from "./pages/Accessories";
+import Electronics from "./pages/Electronics";
+import Details from "./pages/Details";
 
 import "./index.css";
 import Choices from "./components/Choices";
