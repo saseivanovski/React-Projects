@@ -21,11 +21,11 @@ function Choices() {
       </div>
       <div>
         <img src={accessories} alt="" />
-        <Link className={classes.link_a} to={"fourthPage"}>
+        <Link className={classes.link_a} to={"accessoriesProducts"}>
           ACCESSORIES
         </Link>
         <img src={electronics} alt="" />
-        <Link className={classes.link_e} to={"fifthPage"}>
+        <Link className={classes.link_e} to={"eletronicsProducts"}>
           ELECTRONICS
         </Link>
       </div>
