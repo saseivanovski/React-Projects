@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  height: 100px;
+  background-color: lightblue;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeLogoDiv {
+  display: flex;
+  width: 50px;
+  margin-left: 50px;
+}
+.homeLogoDiv button {
+  margin-left: 50px;
+}
+
+.navDiv {
+  display: flex;
+  margin-right: 50px;
+}
+.navDiv div {
+  margin-right: 20px;
+}
