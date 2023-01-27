@@ -25,7 +25,7 @@ function SecondPage() {
   if (error !== "") {
     return <div>{error}</div>;
   }
-
+  console.log(posts);
   return (
     <div className={classes.products}>
       {posts.map((e) => {
